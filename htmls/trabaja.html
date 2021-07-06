@@ -39,30 +39,30 @@
 
 
 
-  
   <header >
-    <div class="container-fluid">
-        <nav class="navbar navbar-inverse nav">
-          <div class="container-fluid">
-            <ul class="nav navbar-nav lista">
-              <li><a class="hoverable boton" href="../index.html">Inicio</a></li>
-              <li><a class="hoverable boton" href="../htmls/Mimix.html">Mimix</a></li>
-              <li><a class="hoverable boton" href="../htmls/contacto.html">Contacto</a></li>
-              <li><a class="hoverable boton active" href="../htmls/trabaja.html">Trabaja con Nosotros</a></li>
-              <li><a href="" class=" hoverable menu boton nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menu</a>
-                <ul class="sublista">
-                    <li> <a href="../htmls/menucumpleto.html" class=" menu boton dropdown-item">Menu Completo</a></li>
-                    <li> <a href="../htmls/promos.html" class=" menu boton dropdown-item">Promos</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
-  </header>
+    <div class="topnav parrafos" id="myTopnav">
+    <a href="../index.html" >Inicio</a>
+    <a href="../htmls/Mimix.html" >Mimix</a>
+    <a href="../htmls/menucumpleto.html" >Menu Completo</a>
+    <a href="../htmls/promos.html" >Promos</a>
+    <a href="../htmls/trabaja.html" class="active">Trabaja con nosotros</a>
+    <a href="../htmls/contacto.html" >Contacto</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
 
-  <div>
-      <img src="../images/sepbasic.png" alt="Separador Inicial" class="banners">
- </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 
 
 <section class="container">
