@@ -29,17 +29,8 @@ $ancho:100%;
 .fotogdm{
     border-radius: 70px;
     transition: all 1.5s linear;
-    filter: grayscale(1);
     height: 400px;
   
-}
-
-.fotogdm:hover{
-        filter: grayscale(0);
-        transform: scale(1.5);
-        position: relative;
-        z-index: 1;
-        
 }
 
 /* instagram */
