@@ -140,8 +140,8 @@ button:nth-child(5):hover ~ button {
 
 /* parrafos para todos */
 .parrafos {
-  text-align: left;
-  font-size: 0.7em;
+  text-align: center;
+  font-size: 20px;
   font-weight: 700;
   padding: 20px;
 }
@@ -243,10 +243,8 @@ button:nth-child(5):hover ~ button {
 }
 
 /* Fotos de la Guerrera del Mes */
-.fotogdm {
+.fotoinicio {
   border-radius: 70px;
-  transition: all 1.5s linear;
-  height: 400px;
 }
 
 /* instagram */
@@ -265,13 +263,16 @@ button:nth-child(5):hover ~ button {
 /* imagenes del grid */
 .imgmenuc {
   filter: grayscale(1);
-  border-radius: 70px;
   display: flex;
   flex-direction: row;
 }
 
 .imgmenuc:hover {
   filter: grayscale(0);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #ec731e;
+  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
   transform: scale(1.5);
 }
 

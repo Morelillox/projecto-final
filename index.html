@@ -23,6 +23,11 @@
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
+    <!-- carrousel -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- voy a usar dos tipos de font -->
@@ -46,6 +51,13 @@
 </head>
 
 <body>
+
+      <!-- logo + enlace a wpp *tiene mensaje predeterminado -->
+      <div class="mensajeWpp">
+        <a href="https://wa.me/0059894690105?text=Hola%20Mimix-Burguer%20quiero%20la%20burguer%20numero:" target="_blank">
+        <img src="images/iconowpp.png" width="100" alt="wppmimix">
+        </a>
+    </div>
     
 
     <!-- Encabezado con logo de empresa mas menu navegable -->
@@ -93,22 +105,49 @@
         
 
     <section class="container">
-    <div>
-        <h2 class="titulo" > Un poco de historia !!!</h2>
-    </div>
+ 
+        <div class="container">
+        <h2 class="titulo">Un poco de Historia !!</h2>  
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/teamchedar.jpg" alt="Chedar Burguer" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="images/menucompleto/laamericanaenpandemolde.jpeg" alt="Burguer en pan de molde" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="images/menucompleto/pollo.jpg" alt="Burguer de pollo" style="width:100%;">
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <div class="container">
-
-        <a a href="https://wa.me/0059894690105?text=Hola%20Mimix-Burguer%20quiero%20la%20GUERRERA%20MUZZA" target="_blank">
-         <img class="fotogdm container" src="images/teammuzza.jpg" alt="Hamburguesa de Muzza y papas fritas" >
-         </a>
-    </div>
-    
-
-        
+        <section>
 
         <!-- Detalles de tono humoristico que alimentan la guerra o noticia de las fotos -->
-        <p class="parrafos container">Si existe en el mundo un plato al que el paso del tiempo le ha sentado fenomenal, ese es la hamburguesa. Europa, y el mundo entero, lleva años viviendo una auténtica fiebre de la hamburguesa, haciendo que este icono de la gastronomía norteamericana, no sólo se siga reinventando, sino que se haya establecido como parte dominante de muchas cocinas y restaurantes del mundo.
+        <p class="parrafos">Si existe en el mundo un plato al que el paso del tiempo le ha sentado fenomenal, ese es la hamburguesa. Europa, y el mundo entero, lleva años viviendo una auténtica fiebre de la hamburguesa, haciendo que este icono de la gastronomía norteamericana, no sólo se siga reinventando, sino que se haya establecido como parte dominante de muchas cocinas y restaurantes del mundo.
 
             Pero, ¿cuál es el verdadero origen de la hamburguesa? Hablar de la historia y el origen de la hamburguesa no es tarea fácil, pero bien lo merece si tenemos en cuenta que desde que nació, su reconocimiento no ha hecho más que aumentar, en gran parte, como un efecto más de la globalización.
             
@@ -165,39 +204,7 @@
 
     
 
-    <div>
-        <h3 class="dondestamos ">Tu valoracion es importante para nosotros </h3>
-       
-        <div class="valoracion container">
-
-            <!-- Estrella 1 -->
-            <button>
-                <i class="fas fa-star"></i>
-            </button>
-    
-            <!-- Estrella 2 -->
-            <button>
-                <i class="fas fa-star"></i>
-            </button>
-    
-            <!-- Estrella 3 -->
-            <button>
-                <i class="fas fa-star"></i>
-            </button>
-    
-            <!-- Estrella 4 -->
-            <button>
-                <i class="fas fa-star"></i>
-            </button>
-    
-            <!-- Estrella 5 -->
-            <button>
-                <i class="fas fa-star"></i>
-            </button>
-    
-        </div>
-    
-        <!-- El footer vamos a tener siempre la cuenta de instagram -->
+         <!-- El footer vamos a tener siempre la cuenta de instagram -->
     <footer class="container">
         <img src="images/sepbasic.png" alt="Separador Final" class="banners">
         <div>
