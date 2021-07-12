@@ -18,7 +18,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    
     
 }
 
@@ -30,6 +30,7 @@
 
 html{
     font-size: 25px;   
+    background: $color-base;
 
 }
 
@@ -70,11 +71,22 @@ html{
   }
 
   @media screen and (max-width: 700px) {
-   .titulo {font-size: 30px;}
-   .parrafos {font-size: 13px;}
+   .titulo {font-size: 16px;}
+   .parrafos {font-size: 8px;
+              padding: 5px;}
    .video {width: 50%;}
-
-    }
+   .sectionmc .gridmc {display:contents;}
+   .picmc {width: unset;
+  display: initial;}
+   .gridmc {text-align: center;
+            display: block;}
+    .pmc {display: block;
+    text-align: center;}
+    .boton {display: block;
+            margin-block-end: 20px;}
+    .topnav a {font-size: 10px; }
+    #formulario {display: unset;    }
+  }
 
   
 

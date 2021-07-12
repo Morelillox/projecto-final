@@ -1044,7 +1044,6 @@ h1 {
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
 }
 
 /*  color base fondo : #ffe6d4
@@ -1054,6 +1053,7 @@ h1 {
          */
 html {
   font-size: 25px;
+  background: #ffe6d4;
 }
 
 /* titulo escondido H1 solo para posicionamiento */
@@ -1094,15 +1094,48 @@ html {
 }
 @media screen and (max-width: 700px) {
   .titulo {
-    font-size: 30px;
+    font-size: 16px;
   }
 
   .parrafos {
-    font-size: 13px;
+    font-size: 8px;
+    padding: 5px;
   }
 
   .video {
     width: 50%;
+  }
+
+  .sectionmc .gridmc {
+    display: contents;
+  }
+
+  .picmc {
+    width: unset;
+    display: initial;
+  }
+
+  .gridmc {
+    text-align: center;
+    display: block;
+  }
+
+  .pmc {
+    display: block;
+    text-align: center;
+  }
+
+  .boton {
+    display: block;
+    margin-block-end: 20px;
+  }
+
+  .topnav a {
+    font-size: 10px;
+  }
+
+  #formulario {
+    display: unset;
   }
 }
 
