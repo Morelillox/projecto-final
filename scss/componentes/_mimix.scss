@@ -163,3 +163,7 @@
           object-fit: cover;
       }
   }
+
+  /* accordeon */
+  .accordion-button {color: $color-texto !important;}
+  .accordion-button:not(.collapsed) {background-color:darken($color-base, 10%) !important;}

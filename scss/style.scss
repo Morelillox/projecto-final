@@ -72,9 +72,9 @@ html{
 
   @media screen and (max-width: 700px) {
    .titulo {font-size: 16px;}
-   .parrafos {font-size: 8px;
+   .parrafos {font-size: 10px;
               padding: 5px;}
-   .video {width: 50%;}
+   .video {width: auto;}
    .sectionmc .gridmc {display:contents;}
    .picmc {width: unset;
   display: initial;}
@@ -84,8 +84,15 @@ html{
     text-align: center;}
     .boton {display: block;
             margin-block-end: 20px;}
-    .topnav a {font-size: 10px; }
+    .topnav a {font-size: 10px;
+              font-family: "Kalam", cursive; }
     #formulario {display: unset;    }
+    .boton{ font-size: 13px;}
+    .contact_form {font-size: 13px;}
+    .contact1-form {width: 100px;}
+    .contact1 {width: auto; }
+    .fotos-car {width: auto;}
+    
   }
 
   

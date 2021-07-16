@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
+     <!-- BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
     <!-- voy a usar dos tipos de font -->
 
     <!-- Kalam Bold 700 y 300 -->
@@ -20,12 +24,7 @@
     <title>Mimix</title>
 </head>
 <body>
-    <!-- logo + enlace a wpp *tiene mensaje predeterminado -->
-    <div class="mensajeWpp">
-        <a href="https://wa.me/0059894690105?text=Hola%20Mimix-Burguer%20quiero%20la%20burguer%20numero:" target="_blank">
-        <img src="../images/iconowpp.png" width="100" alt="wppmimix">
-        </a>
-</div>
+    
 
     <!-- Encabezado con logo de empresa mas menu navegable -->
     <div>
@@ -158,19 +157,36 @@
         </div>
     </section>
 
-    <section class="container">
-        <h2 class="titulo">Mision</h2>
-        <p class="parrafo">“Entregar gran sabor, comida de alta calidad a nuestros clientes y proveer de una experiencia unica que los haga sentir bienvenidos y valorados.”</p>
-    </section>
 
-    <section class="container">
-        <h2 class="titulo">Vision</h2>
-        <p class="parrafo">Llegar a ser la marca de hamburguesas nacionales que llegue a los 19 departamentos de Uruguay.</p>
-    </section>
+    <div class="accordion container" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button titulo" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Mision
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+               <p class="parrafo">“Entregar gran sabor, comida de alta calidad a nuestros clientes y proveer de una experiencia unica que los haga sentir bienvenidos y valorados.”</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed titulo" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Vision
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+                <p class="parrafo">Llegar a ser la marca de hamburguesas nacionales que llegue a los 19 departamentos de Uruguay.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
 
-
-
-    <footer>
+        <footer>
         <img src="../images/sepbasic.png" alt="Separador Final" class="banners">
         <div>
               <a href="https://www.instagram.com/" target="_blank">
@@ -184,6 +200,8 @@
        
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 
 
    </body>

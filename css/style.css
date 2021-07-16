@@ -741,6 +741,15 @@ section {
   object-fit: cover;
 }
 
+/* accordeon */
+.accordion-button {
+  color: maroon !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffc8a1 !important;
+}
+
 .form_hint, .required_notification {
   font-size: 15px;
 }
@@ -1098,12 +1107,12 @@ html {
   }
 
   .parrafos {
-    font-size: 8px;
+    font-size: 10px;
     padding: 5px;
   }
 
   .video {
-    width: 50%;
+    width: auto;
   }
 
   .sectionmc .gridmc {
@@ -1132,10 +1141,31 @@ html {
 
   .topnav a {
     font-size: 10px;
+    font-family: "Kalam", cursive;
   }
 
   #formulario {
     display: unset;
+  }
+
+  .boton {
+    font-size: 13px;
+  }
+
+  .contact_form {
+    font-size: 13px;
+  }
+
+  .contact1-form {
+    width: 100px;
+  }
+
+  .contact1 {
+    width: auto;
+  }
+
+  .fotos-car {
+    width: auto;
   }
 }
 
